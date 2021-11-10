@@ -1,0 +1,11 @@
+--- CMakeLists.txt.orig	2021-10-10 06:40:56 UTC
++++ CMakeLists.txt
+@@ -17,7 +17,7 @@ project(chiapos C CXX ASM)
+ include(FetchContent)
+ 
+ if (${CMAKE_SYSTEM_NAME} MATCHES "FreeBSD")
+-include(${CMAKE_INSTALL_PREFIX}/share/cmake/pybind11/pybind11Config.cmake)
++include(/usr/local/lib/python3.8/site-packages/pybind11/share/cmake/pybind11/pybind11Config.cmake)
+ else()
+ FetchContent_Declare(
+   pybind11-src
