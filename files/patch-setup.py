@@ -4,7 +4,7 @@
  else:
      setup(
          name="chiapos",
-+        version="1.0.9",
++        version="1.0.10",
          author="Mariano Sorgente",
          author_email="mariano@chia.net",
          description="Chia proof of space plotting, proving, and verifying (wraps C++)",
